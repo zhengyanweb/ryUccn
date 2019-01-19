@@ -74,6 +74,12 @@ a {
   margin: 0 auto;
   background: cadetblue;
 }
+.xs-hidden {
+  display: none;
+}
+.xs-visible {
+  display: block;
+}
 .col-xs-1 {
   width: 8.33333333%;
 }
@@ -246,6 +252,12 @@ a {
   .container {
     width: 750px;
     background-color: pink;
+  }
+  .sm-hidden {
+    display: none;
+  }
+  .sm-visible {
+    display: block;
   }
   .col-sm-1 {
     width: 8.33333333%;
@@ -421,6 +433,12 @@ a {
     width: 970px;
     background-color: skyblue;
   }
+  .md-hidden {
+    display: none;
+  }
+  .md-visible {
+    display: block;
+  }
   .col-md-1 {
     width: 8.33333333%;
   }
@@ -594,6 +612,12 @@ a {
   .container {
     width: 1170px;
     background-color: hotpink;
+  }
+  .lg-hidden {
+    display: none;
+  }
+  .lg-visible {
+    display: block;
   }
   .col-lg-1 {
     width: 8.33333333%;
@@ -782,22 +806,53 @@ div[class|='col'] {
 }
 /*公共头部*/
 .head-box {
-  padding-top: 20px;
+  position: relative;
 }
 .head-box .head-log {
+  position: absolute;
   width: 106px;
   height: 30px;
-  padding-left: 20px;
-  display: block;
+  left: 20px;
+  top: 20px;
 }
 .head-box .head-more {
   height: 25px;
   width: 25px;
-  float: right;
-  padding-right: 20px;
+  position: absolute;
+  right: 20px;
+  top: 20px;
 }
-.head-box .nav-box {
-  display: none;
+.head-box-big {
+  position: relative;
+}
+.head-box-big .head-box-big-bg {
+  height: 100px;
+  width: 100%;
+  background: #000;
+  opacity: 0.3;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.head-box-big .head-log-big {
+  width: 180px;
+  position: absolute;
+  top: 22px;
+  left: 5%;
+}
+.head-box-big .menu-box {
+  margin: 0 auto;
+  width: 55%;
+  height: 100px;
+}
+.head-box-big .menu-box a {
+  width: 25%;
+  line-height: 100px;
+  color: #FFF;
+  font-size: 18px;
+  text-align: center;
+  display: block;
+  float: left;
 }
 .banner {
   height: 275px;
@@ -807,7 +862,7 @@ div[class|='col'] {
   background: url(../images/nav.jpg) no-repeat;
   background-size: 100% 100%;
 }
-/* 加载页面  xs  */
+/* 加载页面  xs */
 .load-bg {
   height: 100%;
   width: 100%;
@@ -825,6 +880,7 @@ div[class|='col'] {
   font-size: 25px;
   color: #ffffff;
   text-align: center;
+  margin-bottom: 10px;
 }
 .load-bg .load-common .load-common-info {
   font-size: 14px;
