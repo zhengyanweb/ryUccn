@@ -82,57 +82,62 @@
 }
 
 /* 加载页面  xs */
-.load-bg {
-	height: 100%;
-	width: 100%;
-	background: #102a54 url(../images/load-bg.png) no-repeat;
-	background-size: 100% 100%;
-
-	.load-common {
-		height: 290px/@scaleA;
-		position: absolute;
-		top: 50%;
-		margin-top: -245px/@scaleA;
+.load-page {
+	.load-bg {
+		height: 100%;
 		width: 100%;
+		background: #102a54 url(../images/load-bg.png) no-repeat;
+		background-size: 100% 100%;
 
-		.load-common-h1 {
-			font-size: 50px/@scaleA;
-			color: #ffffff;
-			text-align: center;
-			margin-bottom: 20px/@scaleA;
+		.load-common {
+			height: 290px/@scaleA;
+			position: absolute;
+			top: 50%;
+			margin-top: -245px/@scaleA;
+			width: 100%;
+
+			.load-common-h1 {
+				font-size: 50px/@scaleA;
+				color: #ffffff;
+				text-align: center;
+				margin-bottom: 20px/@scaleA;
+			}
+
+			.load-common-info {
+				font-size: 28px/@scaleA;
+				width: 620px/@scaleA;
+				line-height: 48px/@scaleA;
+				margin: 0 auto;
+				color: #96A7BF;
+			}
 		}
 
-		.load-common-info {
-			font-size: 28px/@scaleA;
-			width: 620px/@scaleA;
-			line-height: 48px/@scaleA;
-			margin: 0 auto;
-			color: #96A7BF;
-		}
-	}
-
-	.load-bottom {
-		position: absolute;
-		bottom: 0;
-		bottom: 85px/@scaleA;
-		width: 100%;
-		display: block;
-
-		p {
-			font-size: 38px/@scaleA;
-			color: #fff;
-			text-align: center;
-		}
-
-		.load-next {
-			height: 30px/@scaleA;
-			width: 30px/@scaleA;
+		.load-bottom {
+			position: absolute;
+			bottom: 0;
+			bottom: 85px/@scaleA;
+			width: 100%;
 			display: block;
-			margin: 25px/@scaleA auto 0;
+
+			p {
+				font-size: 38px/@scaleA;
+				color: #fff;
+				text-align: center;
+			}
+
+			.load-next {
+				height: 30px/@scaleA;
+				width: 30px/@scaleA;
+				display: block;
+				margin: 25px/@scaleA auto 0;
+			}
 		}
+
 	}
 
+	.index-contian {}
 }
+
 
 /* 768 sm */
 @media all and (min-width:768px) {
@@ -144,128 +149,63 @@
 
 /* 992 md */
 @media all and (min-width:992px) {
-	.load-bg {
-		background: #102a54 url(../images/index.jpg) center center no-repeat;
-		background-size: cover;
-	}
+
 
 	.load-page {
-		background-color: red;
 
-		.load-more {
-			display: none
-		}
+		.load-bg {
+			background: #102a54 url(../images/index.jpg) center center no-repeat;
+			background-size: cover;
 
-		.log {
-			display: block;
-			position: absolute;
-			left: 30px;
-		}
-
-
-		.load-log {
-			display: none;
-		}
-
-		.nav-box {
-			height: 69px;
-			line-height: 69px;
-			overflow: hidden;
-			display: block;
-			width: 400px;
-			margin: 0 auto;
-
-			li {
-				float: left;
-
-				a {
-					color: #fff;
-					font-size: 20px;
-					width: 100px;
-					display: block;
+			.load-common {
+				.load-common-h1 {
+					font-size: 50px;
+					color: #ffffff;
 					text-align: center;
 				}
-			}
-		}
 
-		.load-common {
-			.load-common-h1 {
-				font-size: 50px;
-				color: #ffffff;
-				text-align: center;
+				.load-common-info {
+					font-size: 22px;
+					width: 620px;
+					line-height: 48px;
+				}
 			}
 
-			.load-common-info {
-				font-size: 22px;
-				width: 620px;
-				line-height: 48px;
+			.load-bottom {
+				display: none;
 			}
+
+
+
+
+
+
 		}
-
-		.load-bottom {
-			display: none;
-		}
-
-
 	}
 }
 
 /* 1200 lg */
 @media all and (min-width:1200px) {
 	.load-page {
-		background-color: red;
 
-		.load-more {
-			display: none
-		}
-
-		.log {
-			display: block;
-			position: absolute;
-			left: 97px;
-		}
-
-		.load-log {
-			display: none;
-		}
-
-		.nav-box {
-			height: 69px;
-			line-height: 69px;
-			overflow: hidden;
-			display: block;
-			width: 720px;
-			margin: 0 auto;
-
-			li {
-				float: left;
-
-				a {
-					color: #fff;
-					font-size: 20px;
-					width: 180px;
-					display: block;
+		.load-bg {
+			.load-common {
+				.load-common-h1 {
+					font-size: 50px;
+					color: #ffffff;
 					text-align: center;
 				}
-			}
-		}
 
-		.load-common {
-			.load-common-h1 {
-				font-size: 50px;
-				color: #ffffff;
-				text-align: center;
+				.load-common-info {
+					font-size: 22px;
+					width: 620px;
+					line-height: 48px;
+				}
 			}
 
-			.load-common-info {
-				font-size: 22px;
-				width: 620px;
-				line-height: 48px;
+			.load-bottom {
+				display: none;
 			}
-		}
-
-		.load-bottom {
-			display: none;
 		}
 
 	}

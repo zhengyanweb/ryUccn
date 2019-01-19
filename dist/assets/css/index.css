@@ -863,45 +863,45 @@ div[class|='col'] {
   background-size: 100% 100%;
 }
 /* 加载页面  xs */
-.load-bg {
+.load-page .load-bg {
   height: 100%;
   width: 100%;
   background: #102a54 url(../images/load-bg.png) no-repeat;
   background-size: 100% 100%;
 }
-.load-bg .load-common {
+.load-page .load-bg .load-common {
   height: 145px;
   position: absolute;
   top: 50%;
   margin-top: -122.5px;
   width: 100%;
 }
-.load-bg .load-common .load-common-h1 {
+.load-page .load-bg .load-common .load-common-h1 {
   font-size: 25px;
   color: #ffffff;
   text-align: center;
   margin-bottom: 10px;
 }
-.load-bg .load-common .load-common-info {
+.load-page .load-bg .load-common .load-common-info {
   font-size: 14px;
   width: 310px;
   line-height: 24px;
   margin: 0 auto;
   color: #96A7BF;
 }
-.load-bg .load-bottom {
+.load-page .load-bg .load-bottom {
   position: absolute;
   bottom: 0;
   bottom: 42.5px;
   width: 100%;
   display: block;
 }
-.load-bg .load-bottom p {
+.load-page .load-bg .load-bottom p {
   font-size: 19px;
   color: #fff;
   text-align: center;
 }
-.load-bg .load-bottom .load-next {
+.load-page .load-bg .load-bottom .load-next {
   height: 15px;
   width: 15px;
   display: block;
@@ -915,101 +915,37 @@ div[class|='col'] {
 }
 /* 992 md */
 @media all and (min-width: 992px) {
-  .load-bg {
+  .load-page .load-bg {
     background: #102a54 url(../images/index.jpg) center center no-repeat;
     background-size: cover;
   }
-  .load-page {
-    background-color: red;
-  }
-  .load-page .load-more {
-    display: none;
-  }
-  .load-page .log {
-    display: block;
-    position: absolute;
-    left: 30px;
-  }
-  .load-page .load-log {
-    display: none;
-  }
-  .load-page .nav-box {
-    height: 69px;
-    line-height: 69px;
-    overflow: hidden;
-    display: block;
-    width: 400px;
-    margin: 0 auto;
-  }
-  .load-page .nav-box li {
-    float: left;
-  }
-  .load-page .nav-box li a {
-    color: #fff;
-    font-size: 20px;
-    width: 100px;
-    display: block;
-    text-align: center;
-  }
-  .load-page .load-common .load-common-h1 {
+  .load-page .load-bg .load-common .load-common-h1 {
     font-size: 50px;
     color: #ffffff;
     text-align: center;
   }
-  .load-page .load-common .load-common-info {
+  .load-page .load-bg .load-common .load-common-info {
     font-size: 22px;
     width: 620px;
     line-height: 48px;
   }
-  .load-page .load-bottom {
+  .load-page .load-bg .load-bottom {
     display: none;
   }
 }
 /* 1200 lg */
 @media all and (min-width: 1200px) {
-  .load-page {
-    background-color: red;
-  }
-  .load-page .load-more {
-    display: none;
-  }
-  .load-page .log {
-    display: block;
-    position: absolute;
-    left: 97px;
-  }
-  .load-page .load-log {
-    display: none;
-  }
-  .load-page .nav-box {
-    height: 69px;
-    line-height: 69px;
-    overflow: hidden;
-    display: block;
-    width: 720px;
-    margin: 0 auto;
-  }
-  .load-page .nav-box li {
-    float: left;
-  }
-  .load-page .nav-box li a {
-    color: #fff;
-    font-size: 20px;
-    width: 180px;
-    display: block;
-    text-align: center;
-  }
-  .load-page .load-common .load-common-h1 {
+  .load-page .load-bg .load-common .load-common-h1 {
     font-size: 50px;
     color: #ffffff;
     text-align: center;
   }
-  .load-page .load-common .load-common-info {
+  .load-page .load-bg .load-common .load-common-info {
     font-size: 22px;
     width: 620px;
     line-height: 48px;
   }
-  .load-page .load-bottom {
+  .load-page .load-bg .load-bottom {
     display: none;
   }
 }
