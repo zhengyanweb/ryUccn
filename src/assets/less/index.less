@@ -37,9 +37,16 @@
 	}
 }
 
+.banner {
+	height: 550px/@scaleA;
+	width: 100%;
+	background: peru;
+	position: relative;
+	background: url(../images/nav.jpg) no-repeat;
+	background-size: 100% 100%;
+}
 
-/* 加载页面 */
-
+/* 加载页面  xs  */
 .load-bg {
 	height: 100%;
 	width: 100%;
@@ -91,10 +98,21 @@
 
 }
 
+/* 768 sm */
+@media all and (min-width:768px) {
+	.load-bg {
+		background: #102a54 url(../images/index.jpg) center center no-repeat;
+	}
+}
 
 
-/* 992 */
+/* 992 md */
 @media all and (min-width:992px) {
+	.load-bg {
+		background: #102a54 url(../images/index.jpg) center center no-repeat;
+		background-size: cover;
+	}
+
 	.load-page {
 		background-color: red;
 
@@ -156,7 +174,7 @@
 	}
 }
 
-/* 1200 */
+/* 1200 lg */
 @media all and (min-width:1200px) {
 	.load-page {
 		background-color: red;
@@ -215,15 +233,6 @@
 		}
 
 	}
-}
-
-.banner {
-	height: 550px/@scaleA;
-	width: 100%;
-	background: peru;
-	position: relative;
-	background: url(../images/nav.jpg) no-repeat;
-	background-size: 100% 100%;
 }
 
 
