@@ -83,6 +83,45 @@
 	background-size: 100% 100%;
 }
 
+.page-nav{
+	background-color: #0A233D;
+	height:100%;
+	position: absolute;
+	top:-100%;
+	left:0px;
+	width:100%;
+	.head-close {
+		height: 50px/@scaleA;
+		width: 50px/@scaleA;
+		position: absolute;
+		right: 40px/@scaleA;
+		top: 40px/@scaleA;
+	}
+	.page-nav-body{
+		padding: 0 55px/@scaleA;
+		margin-top: 270px/@scaleA;
+		h1{
+			font-size: 50px/@scaleA;
+			color:#fff;
+			text-indent: 55px/@scaleA;
+		}
+		.page-nav-list{
+			margin-top:60px/@scaleA;
+			padding:0;
+			li{
+				border-bottom: solid 1px #364E76;
+				line-height: 125px/@scaleA;
+				
+				a{
+					color:#96A7BF;
+					text-indent: 55px/@scaleA;
+					display: block;
+				}
+			}
+		}
+	}
+}
+
 /* 加载页面  xs */
 .load-page {
 	.load-bg {
@@ -90,6 +129,7 @@
 		width: 100%;
 		background: #102a54 url(../images/load-bg.png) no-repeat;
 		background-size: 100% 100%;
+		position: relative;
 
 		.load-common {
 			height: 290px/@scaleA;
@@ -504,9 +544,10 @@
 /* 项目介绍 */
 .project-page {
 	background-color: #0A233D;
+	height: auto;
 
 	.project-body {
-		padding: 65px/@scaleA 40px/@scaleA 0;
+		padding:40px/@scaleA 65px/@scaleA;
 	}
 
 	h1.title {
@@ -519,6 +560,10 @@
 		font-size: 28px/@scaleA;
 		color: #96A7BF;
 		padding-left: 35px/@scaleA;
+	}
+
+	.project-ul{
+		padding: 0;
 	}
 
 	.list {
@@ -547,6 +592,7 @@
 
 		.banner {
 			background: none;
+			height:100px;
 		}
 
 		.step {

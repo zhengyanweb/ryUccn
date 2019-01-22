@@ -6,13 +6,18 @@
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="../assets/css/index.css">
-    <title>Document</title>
+    <title>上海润益</title>
+    <script src="https://cdn.bootcss.com/jquery/3.3.0/jquery.js"></script>
+    <script type="text/javascript" src="../assets/js/index.js"></script>
 </head>
 
 <body>
     <div class="about-page content">
         <div class="head">
-
+            <div class="head-box sm-visible xs-visible md-hidden lg-hidden">
+                <a href="/page/index.html"><img src="../assets/images/log.png" class="head-log" /></a>
+                <img src="../assets/images/load-more.png" class="head-more" />
+            </div>
         </div>
         <div class="body">
             <div class="row">
@@ -67,7 +72,7 @@
                 </div>
                 <div class="col-xs-1"></div>
             </div>
-            <div class="row">
+            <div class="row" id="xmal" name="xmal">
                 <div class="col-xs-12">
                     <h2 class="project-title">案例项目</h2>
                     <img src="../assets/images/load-next.png" class="project-next" />
@@ -91,7 +96,7 @@
                                 </div>
                                 <div class="col-xs-8">
                                     <p class="project-item-p">百联大宗电商平台，针对传统大宗商品贸易链较长、环节较...</p>
-                                    <a href="#" class="project-item-more">查看更多</a>
+                                    <a href="/page/project.html?type=0" class="project-item-more">查看更多</a>
                                 </div>
                             </div>
                         </div>
@@ -102,7 +107,7 @@
                                 </div>
                                 <div class="col-xs-8">
                                     <p class="project-item-p">中国中化集团规划建设的原油交易平台，将依托供应链，提......</p>
-                                    <a href="#" class="project-item-more">查看更多</a>
+                                    <a href="/page/project.html?type=1" class="project-item-more">查看更多</a>
                                 </div>
                             </div>
                         </div>
@@ -113,7 +118,7 @@
                                 </div>
                                 <div class="col-xs-8">
                                     <p class="project-item-p">中国中化集团规划建设的原油交易平台，将依托供应链，提...</p>
-                                    <a href="#" class="project-item-more">查看更多</a>
+                                    <a href="/page/project.html?type=2" class="project-item-more">查看更多</a>
                                 </div>
                             </div>
                         </div>
@@ -124,7 +129,7 @@
                                 </div>
                                 <div class="col-xs-8">
                                     <p class="project-item-p">欧冶采购以平台为纽带连接采购企业与供应商，提供一站式...</p>
-                                    <a href="#" class="project-item-more">查看更多</a>
+                                    <a href="/page/project.html?type=3" class="project-item-more">查看更多</a>
                                 </div>
                             </div>
                         </div>
@@ -135,14 +140,14 @@
                                 </div>
                                 <div class="col-xs-8">
                                     <p class="project-item-p">欧冶采购以平台为纽带连接采购企业与供应商，提供一站式...</p>
-                                    <a href="#" class="project-item-more">查看更多</a>
+                                    <a href="/page/project.html?type=4" class="project-item-more">查看更多</a>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="row">
+            <div class="row" id="gywm" name="gywm">
                 <div class="col-xs-12">
                     <div class="our-box">
                         <div class="our-imgBg"></div>
@@ -150,7 +155,7 @@
                             <h2 class="our-title">我们的愿景</h2>
                             <img src="../assets/images/load-next.png" class="our-img" />
                             <p class="our-contain">公司致力于以互联网信息技术优势，为传统企业互联网转型和新兴互联网企业创业提供IT技术服务。润益是值得信赖的互联网咨询与技术服务</p>
-                            <a href="#" class="our-more">查看更多</a>
+                            <!-- <a href="#" class="our-more">查看更多</a> -->
                         </div>
                     </div>
                 </div>
@@ -167,6 +172,31 @@
             </div>
         </div>
 
+        <!-- 导航页 -->
+        <div class="page-nav">
+            <div class="head-box">
+                <img src="../assets/images/log.png" class="head-log" />
+                <img src="../assets/images/close.png" class="head-close" />
+            </div>
+            <div class="page-nav-body">
+                <h1>上海润益</h1>
+                <ul class="page-nav-list">
+                    <li>
+                        <a href="/page/about.html">前瞻技术</a>
+                    </li>
+                    <li>
+                        <a href="/page/about.html#xmal">项目案例</a>
+                    </li>
+                    <li>
+                        <a href="/page/about.html#gywm">关于我们</a>
+                    </li>
+                    <li>
+                        <a href="/page/about.html#gywm">联系我们</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- 导航页 -->
     </div>
 
     </div>

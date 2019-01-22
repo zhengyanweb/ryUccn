@@ -864,12 +864,50 @@ div[class|='col'] {
   background: url(../images/nav.jpg) no-repeat;
   background-size: 100% 100%;
 }
+.page-nav {
+  background-color: #0A233D;
+  height: 100%;
+  position: absolute;
+  top: -100%;
+  left: 0px;
+  width: 100%;
+}
+.page-nav .head-close {
+  height: 25px;
+  width: 25px;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+}
+.page-nav .page-nav-body {
+  padding: 0 27.5px;
+  margin-top: 135px;
+}
+.page-nav .page-nav-body h1 {
+  font-size: 25px;
+  color: #fff;
+  text-indent: 27.5px;
+}
+.page-nav .page-nav-body .page-nav-list {
+  margin-top: 30px;
+  padding: 0;
+}
+.page-nav .page-nav-body .page-nav-list li {
+  border-bottom: solid 1px #364E76;
+  line-height: 62.5px;
+}
+.page-nav .page-nav-body .page-nav-list li a {
+  color: #96A7BF;
+  text-indent: 27.5px;
+  display: block;
+}
 /* 加载页面  xs */
 .load-page .load-bg {
   height: 100%;
   width: 100%;
   background: #102a54 url(../images/load-bg.png) no-repeat;
   background-size: 100% 100%;
+  position: relative;
 }
 .load-page .load-bg .load-common {
   height: 145px;
@@ -1190,9 +1228,10 @@ div[class|='col'] {
 /* 项目介绍 */
 .project-page {
   background-color: #0A233D;
+  height: auto;
 }
 .project-page .project-body {
-  padding: 32.5px 20px 0;
+  padding: 20px 32.5px;
 }
 .project-page h1.title {
   font-size: 17px;
@@ -1203,6 +1242,9 @@ div[class|='col'] {
   font-size: 14px;
   color: #96A7BF;
   padding-left: 17.5px;
+}
+.project-page .project-ul {
+  padding: 0;
 }
 .project-page .list {
   padding-top: 22px;
@@ -1226,6 +1268,7 @@ div[class|='col'] {
   }
   .project-page .banner {
     background: none;
+    height: 100px;
   }
   .project-page .step {
     position: absolute;
