@@ -1265,6 +1265,7 @@ div[class|='col'] {
   .project-page {
     background: url(../images/nav.jpg) no-repeat;
     background-size: 100% 100%;
+    height: 100%;
   }
   .project-page .banner {
     background: none;
